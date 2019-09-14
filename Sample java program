@@ -1,0 +1,10 @@
+# Java
+Package com.sample.example;
+
+public class ArrayExample{
+
+public static void main(String args[]){
+
+System.out.println("Sample program");
+
+}
