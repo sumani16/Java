@@ -1,0 +1,70 @@
+package com.string.methods;
+public class StringMethods{
+public static void main(String args[]){
+        String a="Selenium";
+        String b="Selenium" ;
+        a=a.concat("wrk");
+        System.out.println(a);
+       
+       //returns the character at the specified index 
+        System.out.println(a.charAt(2));
+       
+       //replaces the occurrences of S with s
+        System.out.println(a.replace("S","s"));
+       
+       //replaceall method replaces the entire string with given string 
+        System.out.println(a.replaceAll(a,"hello"));
+       
+       //return the hash code of the string
+        System.out.println(a.hashCode());
+       
+       //returns the substring from index 3 till the end of the string
+        System.out.println(a.substring(3));
+        
+        //returns the substring from index 4 till the index 7
+        System.out.println(a.substring(4,7));
+        
+        
+       //length of string
+      System.out.println(a.length());
+      
+      //concatenates the given string 
+        System.out.println(a.concat("wrk"));
+       
+       //copmares the two strings and return either true or false
+        System.out.println(a.equals(b));
+        
+        //coverts into lower case 
+        System.out.println(a.toLowerCase());
+       
+       //checks whether the string contains the given string
+        System.out.println(a.contains("Se"));
+        
+        //joins the given string with the specific delimiter
+        String joins=String.join(",","hi","hello","good mng");        
+    System.out.println(joins);
+    System.out.println(a.split("l"));
+    
+    //converts the string to integer
+    String c="-678";
+    int number=Integer.parseInt(c);
+    System.out.println("String Selenium is converted into number "+number);
+    String e="-123";
+    
+    //converts the string to integer
+    int d=Integer.valueOf(e);
+    System.out.println("String Selenium is converted into number"+d);
+       
+       //converts the integer to  string
+        int abc=123;
+        String str=String.valueOf(abc);
+        System.out.println(str);
+        System.out.println(str+abc);
+        StringBuffer sb = new StringBuffer("Hello");
+        sb.append(" World");
+        System.out.println(sb);
+
+    }
+}
+}
+}
