@@ -1,0 +1,20 @@
+package com.demo;
+
+public class LocalInnerclass {
+    void method(){
+        class Inner{
+            void localmethod(){
+                System.out.println("local inner example");
+            }
+
+        }
+        Inner i=new Inner();
+        i.localmethod();
+    }
+}
+class HelloA{
+    public static void main(String args[]){
+        LocalInnerclass lo=new LocalInnerclass();
+        lo.method();
+    }
+}
