@@ -1,0 +1,22 @@
+package com.demo;
+
+public class OuterInnerclass {
+  public   int a=9;
+    void outer() {
+      // Simple nested inner class
+      class Inner {
+           void show() {
+              System.out.println("inner class method");
+          }
+      }
+      Inner in=new Inner();
+      in.show();
+  }
+}
+class Execute {
+    public static void main(String args[]) {
+        OuterInnerclass ot = new OuterInnerclass();
+        ot.outer();
+
+    }
+}
