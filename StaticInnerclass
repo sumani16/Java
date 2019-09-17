@@ -1,0 +1,14 @@
+package com.demo;
+
+public class StaticInnerclass {
+   public static void outermethod()
+   {
+        System.out.println("outer method");
+    }
+         static class Innercd{
+            public static void main(String args[]){
+                System.out.println("inside inner class Method");
+                outermethod();
+            }
+        }
+    }
